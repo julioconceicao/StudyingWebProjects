@@ -1,0 +1,1 @@
+console.log("joão não lava o pé, não lava pq não quer.")

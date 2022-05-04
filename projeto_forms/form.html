@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="form.css" media="screen">
+        <title>Forms</title>
+    </head>
+    <!-- Dados visuais do formulário, inluindo os inputs -->
+    <body>
+        <!-- Cabeçalho -->
+        <div>
+            <h1 id="titulo">
+                Cadastro<br>
+            </h1>
+            <p id="subtitulo">
+                Complete suas informações:<br>
+            </p>
+        </div>
+        <!-- Informações pessoais -->
+        <form>
+            <!-- Nome e sobrenome -->
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="pnome">
+
+                        <strong>Nome:</strong>
+                    </label><br>
+                    <input type="text" name="pnome" id="pnome" required="required" ><br>
+                </div>
+                <div class="campo">
+                    <label for="snome">
+                        <strong>Sobrenome:</strong>
+                    </label><br>
+                    <input type="text" name="snome" id="snome" required="required"><br>
+                </div class="campo">
+            </fieldset>
+            <!-- Email -->
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="email">
+                        <strong>Endereço de email:</strong>
+                    </label><br>
+                    <input type="email" name="email" id="email" required="required"><br><br>
+                </div>
+                <!-- Senha -->
+                <div>
+                    <label for="password">Sua senha:</label><br>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        required="required"
+                        placeholder="Sua senha de cadastro"><br>
+                </div><br><br>
+
+                <!-- Pesquisa profissional -->
+                <!-- Front, back, full -->
+                <div class="campo">
+                    <label>
+                        <strong>De qual lado da aplicação você desenvolve?</strong>
+                    </label><br>
+                    <label>
+                        <input
+                            type="radio"
+                            name="devweb"
+                            value="frontend"
+                            checked="checked"
+                            required="required">Front-end
+                    </label>
+                    <label>
+                        <input type="radio" name="devweb" value="backend" required="required">Back-end
+                    </label>
+                    <label>
+                        <input type="radio" name="devweb" value="fullstak" required="required">Fullstack
+                    </label>
+                </div>
+                <!-- Senioridade -->
+                <div class="campo">
+                    <label for="senioridade">
+                        <strong>
+                            Senioridade:</strong>
+                    </label>
+                    <select id="senioridade" required="required">
+                        <option selected="selected" disabled="disabled" value="senioridade">Selecione:</option>
+                        <option value="junior" label="Junior">
+                        <option value="pleno" label="Pleno">
+                        <option value="senior" label="Senior">
+                    </select>
+                </div>
+            </fieldset>
+            <!-- Linguagens -->
+            <fieldset class="grupo">
+                <div class="campo">
+
+                    <label>
+                        <strong>Selecione as tecnologias que você utiliza:</strong>
+                    </label><br>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                    <label for="tecnologia1">HTML</label>
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                    <label for="tecnologia2">CSS</label>
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+                    <label for="tecnologia3">Javascript</label>
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                    <label for="tecnologia4">PHP</label>
+                    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                    <label for="tecnologia5">C#</label>
+                    <input type="checkbox" id="tecnologia6" name="tecnologia6" value="C++">
+                    <label for="tecnologia6">C++</label>
+                    <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Python">
+                    <label for="tecnologia7">Python</label>
+                    <input type="checkbox" id="tecnologia8" name="tecnologia8" value="Java">
+                    <label for="tecnologia8">Java</label>
+                </div>
+
+            </fieldset>
+            <!-- Dissertativas -->
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="motivação">
+                        <strong>Por que você escolheu a área da tecnologia?</strong>
+                    </label><br>
+                    <textarea rows="6" style="width: 26em" id="motivação" name="motivação"></textarea>
+                </div>
+                <div class="campo">
+                    <label for="experiencia">
+                        <strong>Conte um pouco da sua experiência:</strong>
+                    </label><br>
+                    <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+                </div>
+                <!--Botão-->
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
